@@ -8,7 +8,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
-mongoose.connect('mongodb://localhost:27017/nodeapi', { useNewUrlParser: true});
+mongoose.connect('mongodb+srv://romulo:Euteamo456@cluster0-qakuv.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true});
 requireDir('./src/models');
 
 app.use('/api', require('./src/routes'));
